@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        var person = {
+            name: "Fred West",
+            age: 52,
+            "Double Barrel" : "Stacey Keach",
+            address: {
+                street: "12 Road St",
+                town: "London"
+            }
+        };
+        console.log(person.address.town);
+        console.log(person["age"]);
+        console.log(person["Double Barrel"]);
+        console.log(person);
+        var personJson = JSON.stringify(person);
+        console.log(personJson);
+        var personPojso = JSON.parse(personJson);
+        console.log(personPojso);
+    </script>
+    <h1>Hi De hi!</h1>
+
+</body>
+</html>
